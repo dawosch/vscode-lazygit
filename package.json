@@ -2,7 +2,11 @@
   "name": "lazygit",
   "displayName": "Lazygit",
   "description": "An extension for using lazygit within vscode",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dawosch/vscode-lazygit"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -14,8 +18,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "lazygit.helloWorld",
-        "title": "Hello World"
+        "command": "lazygit.open",
+        "title": "Open Lazygit"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "lazygit.open",
+        "key": "cmd+g g",
+        "mac": "cmd+g g",
+        "linux": "ctrl+g g"
       }
     ]
   },
